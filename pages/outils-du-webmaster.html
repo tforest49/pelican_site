@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>Outils du webmaster</title>
+        <link rel="stylesheet" href="github.com/tforest49/pelican_site/theme/css/main.css" />
+        <link href="github.com/tforest49/pelican_site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Pelican Site Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="github.com/tforest49/pelican_site/">Pelican Site</a></h1>
+                <nav><ul>
+                    <li><a href="github.com/tforest49/pelican_site/pages/pelican-sur-windows-10.html">Pelican sur Windows 10</a></li>
+                    <li><a href="github.com/tforest49/pelican_site/pages/syntaxe-markdown.html">Syntaxe Markdown</a></li>
+                    <li class="active"><a href="github.com/tforest49/pelican_site/pages/outils-du-webmaster.html">Outils du webmaster</a></li>
+                    <li><a href="github.com/tforest49/pelican_site/pages/site-pelican-des-etudiants-du-bts-services-informatique-du-lycee-douanier-rousseau-de-laval.html">Site Pelican des étudiants du BTS Services Informatique du Lycée Douanier Rousseau de LAVAL</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Outils du webmaster</h1>
+    
+    <p><a href="https://www.developer.mozilla.org">MDN - Mozilla developper Network</a></p>
+<h1>Création d'un favicon.ico pour votre site</h1>
+<h2>installation l'utilitaire imageMagick</h2>
+<p>choco install imagemagick</p>
+<h2>Rafraichir l'environement</h2>
+<div class="highlight"><pre><span></span><span class="go">refreshenv</span>
+</pre></div>
+
+
+<h2>Réduction de l'image original</h2>
+<div class="highlight"><pre><span></span><span class="go">magick convert icon.png -resize 16x16 icon_16.png</span>
+<span class="go">magick convert icon.png -resize 32x32 icon_32.png</span>
+<span class="go">magick convert icon.png -resize 48x49 icon_48.png</span>
+</pre></div>
+
+
+<h2>Conversion vers le format ICO</h2>
+<div class="highlight"><pre><span></span><span class="go">magick convert icon_16.png icon_32.png icon_48.png favicon.ico</span>
+</pre></div>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="github.com/tforest49/pelican_site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
